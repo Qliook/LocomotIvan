@@ -15,6 +15,8 @@ public class menutomenu : MonoBehaviour
     public GameObject shop_building;
     public GameObject shop_end_building;
     public GameObject upgrade_building;
+    public GameObject[][] Upgrade_Buttons;
+    int count;
 
     public void shop_click1()
     {
@@ -69,5 +71,13 @@ public class menutomenu : MonoBehaviour
         shop_building.gameObject.active = false;
 
     }
+    public void dsg()
+    {
+        GameObject[][] Upgarde_Buttons = new GameObject[3][]; 
+        Instantiate(Upgrade_Buttons[count])
+    }
+        
+   
+
 }
 

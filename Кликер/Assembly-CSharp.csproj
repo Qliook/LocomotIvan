@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\click.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\menutomenu.cs" />
+    <Compile Include="Assets\ScrollingMenu.cs" />
     <None Include="Assets\low poly medieval buildings\readme.txt" />
     <None Include="Assets\Hand Painted Seamless Grass Texture\Documentation\Documentation.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
