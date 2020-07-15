@@ -74,7 +74,7 @@ public class menutomenu : MonoBehaviour
     public void dsg()
     {
         GameObject[][] Upgarde_Buttons = new GameObject[3][]; 
-        Instantiate(Upgrade_Buttons[count])
+        
     }
         
    
