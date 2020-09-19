@@ -9,14 +9,20 @@ public class click : MonoBehaviour
     float add_to_click = 1;
     public float maney = 0;
     public Text numbermoney;
+    public Text price_build;
     public float time;
     float deltime;
     float profit_auto = 1;
     bool start_auto = false;
-    float price_auto = 10;
+
+    public float price_auto = 10;
+    public float price_click = 100;
+    public float price_building = 1000;
+
     private int count = 0;
     private GameObject destoring;
     public GameObject[] Buildings;
+    
 
 
     // Use this for initialization
@@ -30,8 +36,8 @@ public class click : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
-       
         numbermoney.text = ("Money:" + maney);
         if (start_auto == true)
         {
@@ -74,20 +80,21 @@ public class click : MonoBehaviour
         if (maney >= 100)
         {
             add_to_click += 2;
-            maney -= 100; 
+            maney -= price_click ; 
         }
 
 
     }
     public void Upgarde_building()
     {
-        if(maney >= 1000)
+        if(maney >= 500)
         {
             Destroy(destoring);
             destoring = Instantiate(Buildings[count]);
             count++;
             Debug.Log("Объект заспавнен " + count);
-            maney -= 1000;
+            maney -= 500;
+
         }
         
     }

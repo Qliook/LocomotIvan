@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class menutomenu : MonoBehaviour
  {
-
-    public GameObject  shop_click ;
-    public GameObject  shop_auto ;
-    public GameObject shop_end_auto;
-    public GameObject shop_end_click;
     public GameObject clicker;
+    [Header ("Upgrades")]
     public GameObject upgrades_auto;
     public GameObject upgrades_click;
-    public GameObject shop_building;
-    public GameObject shop_end_building;
     public GameObject upgrade_building;
+    [Header ("Shops")]
+    public GameObject shop_building;
+    public GameObject  shop_click ;
+    public GameObject  shop_auto ;
+    [Header ("Shops end")]
+    public GameObject shop_end_auto;
+    public GameObject shop_end_click;
+    public GameObject shop_end_building;
+    
+    
+    
+    
+    
 
 
     public void shop_click1()
